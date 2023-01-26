@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+html{
+    font-size: 62.5%;
+    max-width: 1400px;
+}
+body{
+    font-family: Raleway;
+    font-size: 1.6rem;
+    background-color: #FFFFFF;
+    
+}
+.container{
+    display: flex;
+    margin: 4.4rem 7.7rem 0rem 5.5rem ;
+}
+.logo_booki{
+    height: 1.9rem;   
+}
+.nav_lien{
+    display: flex;
+    margin-left: auto;
+    margin-top: 0.4rem;
+}
+.nav_hebergement{
+    margin-right: 6.7rem;  
+}
+
+.hover_nav{
+    color: black;
+    display: inline-block;
+    position: relative;
+}
+.hover_nav:hover{
+    color: #0065FC;  
+}
+.nav_hebergement:hover::after, .nav_activite:hover::after {
+    content: '';
+    border-top: 2px solid #0065FC;
+    width: 16.2rem;
+    position: absolute;
+    bottom: 6.5rem;
+    display: block; 
+    left: 50%;
+    transform: translateX(-50%);
+}
+.header_title{
+    margin-left: 5.5rem;
+    margin-top: 6.3rem;
+    font-size: 2.2rem;
+    font-weight: 700;
+} 
+
+
+@media screen and (max-width: 768px){
+   .container{ 
+    margin: 0;
+    margin-top: 2.1rem;  
+    display: flex;
+    flex-flow: column wrap;
+    
+   }
+   .logo_booki{
+    margin: auto;
+
+   }
+   .nav_lien{
+    margin: auto;
+    margin-top: 4.856rem;
+    padding-right: 6.5rem;
+    padding-left: 3.3rem;
+   }
+   .nav_hebergement{
+    margin-right: 9.1rem;   
+}
+.nav_hebergement:hover::after, .nav_activite:hover::after{
+    border-top: 3px solid #0065FC;
+    width: 18.7rem;
+    bottom: 0;
+    top: 4rem; 
+  }
+  .header_title{
+    margin-left: 2.2rem;
+    margin-top: 5.7rem;
+  }
+}
+
+@media screen and (max-width: 992px)and (min-width: 768px){
+
+    .container{
+        margin-left: 7.2rem;
+        margin-right: 7.2rem;
+    }
+    .nav_hebergement{
+        margin-right: 6.8rem;  
+    }
+}
