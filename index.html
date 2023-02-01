@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
     <title>Booki</title>
 </head>
@@ -24,13 +24,48 @@
         <h1 class="header_title">Trouvez votre hébergement pour des vacances de rêve</h1>
         <p class="sous_titre">En plein centre-ville ou en pleine nature</p>
 
+        <form>
             <div class="flex_search bordure_search">
 
                 <div class="size_icon"><i class="fa-solid fa-location-dot"></i> </div>
                 <div ><input class="search_input no_outline" type="search" placeholder="Marseille, France"> </div>
-                <div ><input class="btn_rechercher" type="button" value="Rechercher"></div>
-
+                <div ><input class="btn_rechercher" type="button" value="Rechercher">
+                    <input class="btn_glass" type="button" value="&#xf002;"></div>
+                
             </div>
+        </form>
+
+        <div class="filter-base">
+            <p>Filters</p>
+            <ul class="child">
+
+              <li class="filter-button">
+                <i class="fa-solid fa-money-bill-wave"></i>
+                <input type="button" class="filter-text" value="Économique">
+              </li>
+
+
+              <li class="filter-button">
+                <i class="fa-solid fa-person"></i>
+                <input type="button" class="filter-text" value="Familial">
+              </li>
+              <li class="filter-button">
+                <i class="fa-solid fa-heart"></i>
+                <input type="button" class="filter-text" value="Romantique">
+              </li>
+              <li class="filter-button">
+                <i class="fa-solid fa-dog"></i>
+                <input type="button" class="filter-text" value="Animaux autorisés">
+              </li>
+            </ul>
+        </div>
+
+        <div class="information">
+            <i class="fa-solid fa-info"></i>
+            <p>Plus de 500 logements sont disponibles dans cette ville</p>
+        </div>
+
+
     </header>
     <main>
 
