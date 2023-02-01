@@ -381,15 +381,14 @@ header{
     }
 
     .filter-text {
-        padding-left: 5px ;
         font-size: 11px;
     }
 
     .fa-heart, .fa-dog, .fa-person, .fa-money-bill-wave {
-        margin-right: 5px;
         font-size: 19px;
-    
+        padding-right: 5px;
     }
+
     .child{
         display: grid;
         grid-template-columns: 160px 160px;
