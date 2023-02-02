@@ -269,6 +269,9 @@ header{
     padding: 5px;
     border-radius: 20px;
 }
+.box_shadow{
+    box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.3);
+}
 
 
 /* --OFFERS-- IMG HEBERGEMENT */
