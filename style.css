@@ -235,36 +235,37 @@ header{
 /* --OFFERS-- */
 
 
-.offers{
-    max-width: 1340px;
+.offers {
+    max-width: 100%;
     display: flex;
-    padding: 39px 0 60px;
+    padding: 4% 0 6%;
 }
 .fontcolor{
     border-radius: 20px;
     background-color: #F2F2F2;
 }
-.card_marseille{
-    width: 880px;
-    height: 625px;
-    margin-right: 40px;
+.card_marseille {
+    width: 80%;
+    height: 62.5%;
+    margin-right: 4%;
 }
-.titre_marseille{
-    padding: 42px 0 0 40px;
-    font-size: 22px;
+
+.titre_marseille {
+    padding: 2% 0 0 4%;
+    font-size: 16px;
     font-weight: 700;
 }
-.display_cards{
+
+.display_cards {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 31px;
-    padding: 23px 40px 40px 40px;
+    gap: 3.1rem;
+    padding: 2.3rem 4% 4% 4%;
 }
 
-
-.cards_size{
-    width: 246px;
-    height: 199px;
+.cards_size {
+    width: 100%;
+    height: 100%;
     background-color: #FFFFFF;
     padding: 5px;
     border-radius: 20px;
@@ -313,17 +314,16 @@ header{
 /* --OFFERS-- TITRE */
 
 
-.cards_text_sizing h3{
-    font-size: 16px;
+.cards_text_sizing h3 {
+    font-size: 1.6rem;
     font-weight: 700;
-    padding: 5px 0 5px 11px;
+    padding: 5px 0 5px 1.1rem;
 }
 
 .cards_text_sizing p {
-    font-size: 14px;
-    padding: 0 0 0 11px;
+    font-size: 1.4rem;
+    padding: 0 0 0 1.1rem;
 }
-
 
 /* --OFFERS-- ETOILE */
 
@@ -341,11 +341,11 @@ header{
 }
 
 
-.afficher_plus{
+.afficher_plus {
     cursor: pointer;
-    font-size: 18px;
+    font-size: 1.8rem;
     font-weight: 700;
-    margin-left: 44px;
+    margin-left: 4.4rem;
 }
 .card_populaire{
    width: 420px;
