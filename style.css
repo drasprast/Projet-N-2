@@ -49,8 +49,7 @@ nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-left: 5px;
-    padding-bottom: 13px;
+    margin-bottom: 13px;
 }
 
 .logo_booki{
@@ -60,14 +59,11 @@ nav{
 
 .nav_lien{
     display: flex;
-    padding-right: 3px;
-}
-.nav_activite{
-    margin-left: 20px;
 }
 
+
 .nav_link{
-    padding: 46px 24px;
+    padding: 46px 34px;
     border-top: solid 2px transparent;
 }
 
@@ -176,12 +172,18 @@ header{
     align-items: center;
     padding-left: 7px;
     padding-bottom: 38px;
+    align-items: baseline;
 } 
+.child{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
 
-.filter-base p {
+.filter-base h2 {
     font-size: 18px;
     font-weight: 700;
-    padding-right: 36px;
+    padding-right: 30px;
 }
   
 .filter-button {
@@ -191,7 +193,6 @@ header{
     border: 2px solid #D9D9D9;
     border-radius: 25px;
     padding: 14px 20px;
-    margin-right: 36px;
 }
   
 .filter-text {
@@ -221,14 +222,21 @@ header{
 .information{
     display: flex;
     align-items: center;
+    align-items: baseline;
 }
-
-.fa-info{
-    font-size: 5px;
-    padding: 7px 10px;
-    margin: 0 11px 0 4px;
+.information p {
+    padding-left:11px ;
+}
+.cercle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
     border: solid 1px #D9D9D9;
+    height: 24px;
+    width: 24px;
     border-radius: 15px;
+    color: var(--color-blue);  
 }
 
 
@@ -238,29 +246,28 @@ header{
 .offers {
     max-width: 100%;
     display: flex;
-    padding: 4% 0 6%;
+    gap: 40px;
+    padding: 39px 0 60px;
 }
 .fontcolor{
     border-radius: 20px;
     background-color: #F2F2F2;
 }
 .card_marseille {
-    width: 80%;
-    height: 62.5%;
-    margin-right: 4%;
+    width: 70%;
 }
 
 .titre_marseille {
-    padding: 2% 0 0 4%;
-    font-size: 16px;
+    padding: 42px 0 0 40px;
+    font-size: 22px;
     font-weight: 700;
 }
 
 .display_cards {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 3.1rem;
-    padding: 2.3rem 4% 4% 4%;
+    gap: 31px;
+    padding: 23px 40px 40px ;
 }
 
 .cards_size {
@@ -278,9 +285,9 @@ header{
 /* --OFFERS-- IMG HEBERGEMENT */
 
 
-.hebergement_1{
+ /* .hebergement_1{
     background-image: url("image/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg");
-}
+} 
 
 .hebergement_2{
     background-image: url("image/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg");
@@ -300,10 +307,17 @@ header{
 
 .hebergement_6{
     background-image: url("image/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg");
-}
-
-.hebergement_1, .hebergement_2, .hebergement_3, .hebergement_4, .hebergement_5, .hebergement_6{
+} */
+/* .hebergement_1,.hebergement_2,.hebergement_3,.hebergement_4,.hebergement_5,.hebergement_6{
     background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 120px;
+    border-radius: 16px 16px 0 0;
+} */
+
+.hebergement img{
+    object-fit: cover;
     background-position: center;
     width: 100%;
     height: 120px;
@@ -315,14 +329,14 @@ header{
 
 
 .cards_text_sizing h3 {
-    font-size: 1.6rem;
+    font-size: 16px;
     font-weight: 700;
-    padding: 5px 0 5px 1.1rem;
+    padding: 5px 0 5px 11px;
 }
 
 .cards_text_sizing p {
-    font-size: 1.4rem;
-    padding: 0 0 0 1.1rem;
+    font-size: 14px;
+    padding: 0 0 0 11px;
 }
 
 /* --OFFERS-- ETOILE */
@@ -343,13 +357,13 @@ header{
 
 .afficher_plus {
     cursor: pointer;
-    font-size: 1.8rem;
+    font-size: 18px;
     font-weight: 700;
-    margin-left: 4.4rem;
+    margin: 0 0 46px 44px;
 }
 .card_populaire{
-   width: 420px;
-   height: 625px;
+   width: 30%;
+   
 }
 
 
@@ -404,11 +418,24 @@ header{
         margin-right: 0px;
     }
 
+
+
+    .offers {
+        flex-direction: column;
+        gap: 26px;
+        padding: 35px 0 105px;
+    }
+
+    .card_marseille {
+        margin: 0;
+        width: auto;
+        padding: 0;
+    }
 }
 
 @media screen and (max-width: 768px){
     .container{
-        padding: 0 20px;
+        padding: 0;
     }
 
 /* --NAV-- */
@@ -417,10 +444,11 @@ header{
     nav{
         flex-direction: column;
         align-items: center;
+        margin-bottom: 31px;
     }
 
-    img.logo_booki{
-        margin: auto;
+    .logo_booki{
+        margin: 20px auto 0px;
     }
 
     .nav_lien{
@@ -434,18 +462,14 @@ header{
         justify-content: center;
     }
 
-    .nav_lien{
-        padding: 25px 0px 31px;
-    }
-
     .nav_link{
-        padding: 23px 33px;
+        padding: 48px 0px 23px;
         border-top: none;
-        border-bottom: solid 3px #F2F2F2;  
-    }
-
-    .nav_activite{
-        margin-left: 0px;
+        border-bottom: solid 3px #F2F2F2; 
+        display:flex ;
+        width:100%;
+        align-items: center;
+        justify-content :center 
     }
 
     .hover_nav:hover{
@@ -458,7 +482,18 @@ header{
 /* --HEADER-- */
 
     header{
+
+
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+
+
         padding-left: 0;
+        padding: 0 20px;
     }
     .sous_titre{
         padding: 13px 0 36px 0;
@@ -480,7 +515,7 @@ header{
     }
 
     .flex_search{
-        margin-left: 2px;
+        margin-left: 0;
         margin-bottom: 34px;
     }
 
@@ -497,12 +532,19 @@ header{
     }
 
     .filter-base{
-        display: inherit; 
+
+
+
+        display: flex; 
+        flex-direction: column;
+
+
+
         padding-bottom: 43px; 
         padding-left: 0;  
     } 
 
-    .filter-base p {
+    .filter-base h2 {
         padding-right: 0px;
         padding-bottom: 15px;
     }
@@ -520,6 +562,7 @@ header{
         display: grid;
         grid-template-columns: 160px 160px;
         gap: 17px;
+        
     }
 
     /* --INFORMATION-- */
@@ -529,4 +572,40 @@ header{
     margin-left: 0;   
 }
 
+
+.offers {
+    flex-direction: column-reverse;
+    gap: 26px;
+    padding: 35px 0 105px;
+}
+
+.fontcolor{
+    border-radius: 0px;
+    background-color: inherit;
+}
+
+.card_marseille {
+    margin: auto;
+    width: auto;
+    padding: 0 20px;
+}
+.cards_size {
+    width: 335px;
+
+    padding: 5px;
+    border-radius: 20px;
+}
+
+.titre_marseille {
+    padding: 0 0 19px;
+}
+
+.display_cards {
+    grid-template-columns: 1fr ;
+    gap: 12px;
+    padding: 0 ;
+}
+.afficher_plus {
+    display: none;
+}
 }
