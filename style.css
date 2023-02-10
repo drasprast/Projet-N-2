@@ -244,15 +244,19 @@ header{
 
 
 .offers {
-    max-width: 100%;
     display: flex;
-    gap: 40px;
+    gap: 3%;
     padding: 39px 0 60px;
 }
 .fontcolor{
     border-radius: 20px;
     background-color: #F2F2F2;
 }
+
+
+/* --OFFERS-- marseille */
+
+
 .card_marseille {
     width: 70%;
 }
@@ -271,61 +275,29 @@ header{
 }
 
 .cards_size {
-    width: 100%;
-    height: 100%;
     background-color: #FFFFFF;
     padding: 5px;
     border-radius: 20px;
+    height: 100%;
 }
 .box_shadow{
     box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.3);
 }
 
 
-/* --OFFERS-- IMG HEBERGEMENT */
+/* --OFFERS-- img hebergement */
 
-
- /* .hebergement_1{
-    background-image: url("image/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg");
-} 
-
-.hebergement_2{
-    background-image: url("image/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg");
-}
-
-.hebergement_3{
-    background-image: url("image/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg");
-}
-
-.hebergement_4{
-    background-image: url("image/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg");
-}
-
-.hebergement_5{
-    background-image: url("image/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg");
-}
-
-.hebergement_6{
-    background-image: url("image/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg");
-} */
-/* .hebergement_1,.hebergement_2,.hebergement_3,.hebergement_4,.hebergement_5,.hebergement_6{
-    background-size: cover;
-    background-position: center;
-    width: 100%;
-    height: 120px;
-    border-radius: 16px 16px 0 0;
-} */
 
 .hebergement img{
     object-fit: cover;
-    background-position: center;
+    object-position: center;
     width: 100%;
     height: 120px;
     border-radius: 16px 16px 0 0;
 }
 
 
-/* --OFFERS-- TITRE */
+/* --OFFERS-- titre */
 
 
 .cards_text_sizing h3 {
@@ -339,7 +311,7 @@ header{
     padding: 0 0 0 11px;
 }
 
-/* --OFFERS-- ETOILE */
+/* --OFFERS-- etoile */
 
 
 .rating_stars {
@@ -361,13 +333,86 @@ header{
     font-weight: 700;
     margin: 0 0 46px 44px;
 }
+
+
+/* --OFFERS-- populaire */
+
+
 .card_populaire{
    width: 30%;
    
 }
 
+.titre_populaire{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 41px 42px 0 37px;
+}
+.titre_populaire h2{
+    font-size: 22px;
+    font-weight: 700;
+}
+.titre_populaire i{
+    color: var(--color-blue);
+    font-size: 18px;
+}
+
+.display_cards_populaire{
+    display: grid;
+    gap: 33px;
+    padding: 26px 40px 34px 37px ;
+}
+
+.cards_size_populaire{
+    display: grid;
+    grid-template-columns: 40% 1fr;
+    gap: 20px;
+    background-color: #FFFFFF;
+    padding: 5px;
+    border-radius: 20px;
+}
+
+.hebergement_populaire img{
+    object-fit: cover;
+    width: 100%;
+    height: 135px;
+    border-radius: 16px 0 0 16px;
+}
 
 
+/* --ACTIVITE-- */
+
+.activite_marseille{
+    width: 100%;
+}
+
+.titre_activite{
+    font-size: 22px;
+    font-weight: 700;
+    padding: 0 0 18px;
+}
+.display_cards_activite{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 43px;  
+}
+.cards_size_activite {
+    height: 100%;
+    background-color: #FFFFFF;
+    border-radius: 20px;
+}
+.img_activite img{
+    object-fit: cover;
+    width: 100%;
+    height: 380px;
+    border-radius: 16px 16px 0 0;
+}
+.titre_card_activite{
+    font-size: 16px;
+    font-weight: 700;
+    padding: 20px 20px 20px 20px;
+}
 
 
 
@@ -418,7 +463,7 @@ header{
         margin-right: 0px;
     }
 
-
+/* --OFFERS-- */
 
     .offers {
         flex-direction: column;
@@ -430,6 +475,20 @@ header{
         margin: 0;
         width: auto;
         padding: 0;
+    }
+
+    /* --ACTIVITE-- */
+
+    .titre_activite{
+        padding: 0 0 34px;
+    }
+
+    .img_activite img{
+        height: 200px;   
+    }
+
+    .display_cards_activite{
+        gap: 50px   
     }
 }
 
@@ -527,8 +586,8 @@ header{
         width: 160px;
         padding: 14px 20px;
         padding-left: 13px;
-    margin-right: 0px;
-    
+        margin-right: 0px;
+
     }
 
     .filter-base{
@@ -564,48 +623,76 @@ header{
         gap: 17px;
         
     }
+/* --INFORMATION-- */
 
-    /* --INFORMATION-- */
 
-
-.fa-info{
+    .fa-info{
     margin-left: 0;   
-}
+    }
 
 
-.offers {
-    flex-direction: column-reverse;
-    gap: 26px;
-    padding: 35px 0 105px;
-}
+/* --OFFERS-- */
 
-.fontcolor{
-    border-radius: 0px;
-    background-color: inherit;
-}
 
-.card_marseille {
-    margin: auto;
-    width: auto;
-    padding: 0 20px;
-}
-.cards_size {
-    width: 335px;
+    .offers {
+        flex-direction: column-reverse;
+        gap: 26px;
+        padding: 35px 0 105px;
+    }
 
-    padding: 5px;
-    border-radius: 20px;
-}
+    .fontcolor{
+        border-radius: 0px;
+        background-color: inherit;
+    }
 
-.titre_marseille {
-    padding: 0 0 19px;
-}
+    .card_marseille {
+        margin: auto;
+        width: auto;
+        padding: 0 20px;
+    }
 
-.display_cards {
-    grid-template-columns: 1fr ;
-    gap: 12px;
-    padding: 0 ;
-}
-.afficher_plus {
-    display: none;
-}
+    .cards_size {
+        width: 335px;
+
+        padding: 5px;
+        border-radius: 20px;
+    }
+
+    .titre_marseille {
+        padding: 0 0 19px;
+    }
+
+    .display_cards {
+        grid-template-columns: 1fr ;
+        gap: 12px;
+        padding: 0 ;
+    }
+
+    .afficher_plus {
+        display: none;
+    }
+
+    
+
+    .activite_marseille{
+       width: 375px;
+       margin: auto;
+        padding: 0 20px;
+    }
+
+    .display_cards_activite{   
+        grid-template-columns:  1fr;  
+
+       
+    }
+
+    .cards_size_activite{
+        width: 335px;
+        
+    }
+
+    .img_activite img{    
+        height: 140px;
+    }
+     
 }
