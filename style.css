@@ -237,6 +237,7 @@ header{
     width: 24px;
     border-radius: 15px;
     color: var(--color-blue);  
+    flex-shrink: 0;
 }
 
 
@@ -245,7 +246,7 @@ header{
 
 .offers {
     display: flex;
-    gap: 3%;
+    gap: 40px;
     padding: 39px 0 60px;
 }
 .fontcolor{
@@ -258,11 +259,14 @@ header{
 
 
 .card_marseille {
-    width: 70%;
+    width: 67.7%;
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    
 }
 
 .titre_marseille {
-    padding: 42px 0 0 40px;
     font-size: 22px;
     font-weight: 700;
 }
@@ -271,14 +275,13 @@ header{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 31px;
-    padding: 23px 40px 40px ;
+    padding: 20px 0 40px 0;   
 }
 
 .cards_size {
     background-color: #FFFFFF;
-    padding: 5px;
-    border-radius: 20px;
-    height: 100%;
+    padding: 5px ;
+    border-radius: 20px; 
 }
 .box_shadow{
     box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.3);
@@ -288,36 +291,34 @@ header{
 /* --OFFERS-- img hebergement */
 
 
-.hebergement img{
-    object-fit: cover;
-    object-position: center;
+.img_marseille{   
     width: 100%;
-    height: 120px;
-    border-radius: 16px 16px 0 0;
+    border-radius: 16px 16px 0 0;  
+    object-fit: cover;
+    aspect-ratio: 2/1;  
 }
 
 
 /* --OFFERS-- titre */
 
-
+.cards_text_sizing{
+    padding: 5px 11px;    
+}
 .cards_text_sizing h3 {
     font-size: 16px;
     font-weight: 700;
-    padding: 5px 0 5px 11px;
 }
 
 .cards_text_sizing p {
-    font-size: 14px;
-    padding: 0 0 0 11px;
+    font-size: 14px;       
 }
 
 /* --OFFERS-- etoile */
 
-
-.rating_stars {
-    padding-top: 2px;
-    padding-left: 11px;    
+.rating_stars{
+    margin-top: auto;
 }
+
 .rating_stars i{
     margin: -1px;
     color: var(--color-blue);
@@ -331,16 +332,17 @@ header{
     cursor: pointer;
     font-size: 18px;
     font-weight: 700;
-    margin: 0 0 46px 44px;
+    display: flex;
+    margin-top: auto;
 }
 
 
 /* --OFFERS-- populaire */
-
-
 .card_populaire{
-   width: 30%;
-   
+    width: 32.3%;
+    display: flex;
+    flex-direction: column;
+    
 }
 
 .titre_populaire{
@@ -359,54 +361,79 @@ header{
 }
 
 .display_cards_populaire{
-    display: grid;
+    display: flex;
+    flex-direction: column;
     gap: 33px;
-    padding: 26px 40px 34px 37px ;
+    padding: 40px;
+    width: 100%;
 }
-
 .cards_size_populaire{
-    display: grid;
-    grid-template-columns: 40% 1fr;
-    gap: 20px;
+    display: flex;
     background-color: #FFFFFF;
     padding: 5px;
     border-radius: 20px;
+    
+
+}
+.img_populaire{
+    width: 40%;
+    object-fit: cover;
+    aspect-ratio: 1/1.1;
+    border-radius: 16px 0 0 16px;  
+}
+.cards_text_sizing_populaire{
+    padding: 11px;
+   display: flex;
+   flex-direction: column;
 }
 
-.hebergement_populaire img{
-    object-fit: cover;
-    width: 100%;
-    height: 135px;
-    border-radius: 16px 0 0 16px;
+
+.cards_text_sizing_populaire h3{
+    font-size:16px;
+    font-weight: 700;
+    padding-bottom: 7px;
 }
+
+.cards_text_sizing_populaire p{
+    font-size: 14px;
+}
+
+
+
+
+
 
 
 /* --ACTIVITE-- */
 
 .activite_marseille{
     width: 100%;
+    
 }
 
 .titre_activite{
     font-size: 22px;
     font-weight: 700;
-    padding: 0 0 18px;
 }
+
 .display_cards_activite{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 43px;  
+    gap: 40px;  
+    padding: 16px 0 60px;
 }
+
 .cards_size_activite {
-    height: 100%;
     background-color: #FFFFFF;
     border-radius: 20px;
 }
+
 .img_activite img{
     object-fit: cover;
     width: 100%;
-    height: 380px;
+    aspect-ratio: 10/13;
     border-radius: 16px 16px 0 0;
+    
 }
 .titre_card_activite{
     font-size: 16px;
@@ -415,6 +442,22 @@ header{
 }
 
 
+/* --FOOTER-- */
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 45px 70px;
+    background-color:#F2F2F2 ;
+}
+footer ul{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+footer ul h2{
+    padding-bottom: 8px;
+}
 
 
   
@@ -472,20 +515,27 @@ header{
     }
 
     .card_marseille {
-        margin: 0;
         width: auto;
-        padding: 0;
     }
 
+    .card_populaire{
+        width: auto;
+        
+    }
+    .display_cards_populaire{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+        
+    
+    
     /* --ACTIVITE-- */
 
     .titre_activite{
         padding: 0 0 34px;
     }
 
-    .img_activite img{
-        height: 200px;   
-    }
+    
 
     .display_cards_activite{
         gap: 50px   
@@ -652,7 +702,7 @@ header{
     }
 
     .cards_size {
-        width: 335px;
+        max-width: 335px;
 
         padding: 5px;
         border-radius: 20px;
@@ -667,32 +717,77 @@ header{
         gap: 12px;
         padding: 0 ;
     }
+    .img_marseille{
+        aspect-ratio: 3/1.15;
+    }
 
     .afficher_plus {
         display: none;
     }
 
-    
+
+
+
+
+    .display_cards_populaire{
+        display: grid;
+        grid-template-columns: 1fr ;
+        gap: 12px;
+        padding: 0 ;   
+        padding: 0 20px;    
+    }
+    .titre_populaire{
+        max-width: 334px;
+        gap: 100px;
+        margin: auto;
+        padding: 0;
+        padding-bottom: 26px;
+        
+    }
+
+    .cards_size_populaire{
+        max-width: 334px;
+        margin: auto;
+    }
+    .card_populaire{
+        padding: 28px 0 47px 0;
+        width: 100%;
+        background-color: #F2F2F2;
+    }
+
+
+
+
 
     .activite_marseille{
-       width: 375px;
+       max-width: 375px;
        margin: auto;
-        padding: 0 20px;
+        padding: 0 20px 80px 20px;
     }
 
     .display_cards_activite{   
         grid-template-columns:  1fr;  
+        gap: 24px;
 
        
     }
 
     .cards_size_activite{
-        width: 335px;
+        max-width: 335px;
         
     }
 
     .img_activite img{    
-        height: 140px;
+        max-height: 140px;
     }
-     
+    footer{
+        flex-direction: column;   
+        padding: 45px 30px;
+    }
+    
+    
+   .ul1{
+    padding-bottom: 40px;
+   }
+   
 }
