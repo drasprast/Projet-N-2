@@ -310,7 +310,8 @@ header{
 }
 
 .cards_text_sizing p {
-    font-size: 14px;       
+    font-size: 14px;  
+    padding-bottom: 7px;     
 }
 
 /* --OFFERS-- etoile */
@@ -695,6 +696,10 @@ footer ul h2{
         background-color: inherit;
     }
 
+    
+/* --OFFERS-- marseille */
+
+
     .card_marseille {
         margin: auto;
         width: auto;
@@ -726,7 +731,7 @@ footer ul h2{
     }
 
 
-
+/* --OFFERS-- populaire */
 
 
     .display_cards_populaire{
@@ -756,7 +761,7 @@ footer ul h2{
     }
 
 
-
+/* --ACTIVITE-- */
 
 
     .activite_marseille{
@@ -780,13 +785,16 @@ footer ul h2{
     .img_activite img{    
         max-height: 140px;
     }
+
+
+ /* --FOOTER-- */
+
+
     footer{
         flex-direction: column;   
         padding: 45px 30px;
-    }
-    
-    
-   .ul1{
+    }  
+   .ul_padd_bott{
     padding-bottom: 40px;
    }
    
