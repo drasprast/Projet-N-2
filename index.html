@@ -11,6 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
     <title>Booki</title>
 </head>
+
 <body class="container">
     <nav>
       <img class="logo_booki" src="image/logo/Booki.png" alt="">   
@@ -20,41 +21,50 @@
       </ul>
     </nav>
     
+    
     <header>
+      
       <h1 class="header_title">Trouvez votre hébergement pour des vacances de rêve</h1>
       <p class="sous_titre">En plein centre-ville ou en pleine nature</p>
 
-        <form>
-          <div class="flex_search bordure_search">
-            <div class="size_icon"> <i class="fa-solid fa-location-dot"> </i> </div>
-            <input class="search_input no_outline" type="search" placeholder="Marseille, France">
-            <div > <input class="btn_rechercher" type="button" value="Rechercher"> <input class="btn_glass" type="button" value="&#xf002;"> </div>    
-          </div>
+        <form class="flex_search bordure_search">          
+          <div class="size_icon"> <i class="fa-solid fa-location-dot"> </i> </div>
+          <input class="search_input no_outline" type="search" placeholder="Marseille, France">
+          <div > <input class="btn_rechercher" type="button" value="Rechercher"> <input class="btn_glass" type="button" value="&#xf002;"> </div>            
         </form>
 
         <div class="filter-base">
           <h2>Filtres</h2>
           <ul class="child">
-
-            <li class="filter-button">
-              <i class="fa-solid fa-money-bill-wave"></i>
-              <input type="button" class="filter-text" value="Économique">
+            
+            <li>
+              <a class="filter-button" href="#">
+                <i class="fa-solid fa-money-bill-wave"></i>
+                <input type="button" class="filter-text" value="Économique">
+              </a>
             </li>
-
-            <li class="filter-button">
-              <i class="fa-solid fa-person"></i>
-              <input type="button" class="filter-text" value="Familial">
+                       
+            <li>
+              <a class="filter-button" href="#">
+                <i class="fa-solid fa-person"></i>
+                <input type="button" class="filter-text" value="Familial">
+              </a>
             </li>
-
-            <li class="filter-button">
-              <i class="fa-solid fa-heart"></i>
-              <input type="button" class="filter-text" value="Romantique">
+                          
+            <li>
+              <a class="filter-button" href="#">
+                <i class="fa-solid fa-heart"></i>
+                <input type="button" class="filter-text" value="Romantique">
+              </a>
             </li>
-
-            <li class="filter-button">
-              <i class="fa-solid fa-dog"></i>
-              <input type="button" class="filter-text" value="Animaux autorisés">
+            
+            <li>
+              <a class="filter-button" href="#">
+                <i class="fa-solid fa-dog"></i>
+                <input type="button" class="filter-text" value="Animaux autorisés">
+              </a>
             </li>
+            
           </ul>
         </div>
 
@@ -251,22 +261,22 @@
 
     <footer>
         <ul class="ul_padd_bott">
-            <h2>À propos</h2>
-            <li>Fonctionnement du site</li>
-            <li>Conditions générales </li>
-            <li>Données et confidentialité</li>
+            <li><h2>À propos</h2></li>
+            <li><a href="#">Fonctionnement du site</a></li>
+            <li><a href="#">Conditions générales</a></li>
+            <li><a href="#">Données et confidentialité</a></li>
         </ul>
 
         <ul class="ul_padd_bott">
-            <h2>Nos hébergements</h2>
-            <li>Charte qualité</li>
-            <li>Proposer votre hôtel</li>     
+            <li><h2>Nos hébergements</h2></li>
+            <li><a href="#">Charte qualité</a></li>
+            <li><a href="#">Proposer votre hôtel</a></li>     
         </ul>
 
         <ul >
-            <h2>Assistance</h2>
-            <li>Centre d'aide</li>
-            <li>Nous contacter</li>      
+            <li><h2>Assistance</h2></li>
+            <li><a href="#">Centre d'aide</a></li>
+            <li><a href="#">Nous contacter</a></li>      
         </ul>
     </footer>
 </body>
