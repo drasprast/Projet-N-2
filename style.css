@@ -101,15 +101,15 @@ header{
 .header_title{
     font-size: var(--font-size-22);
     font-weight: var(--font-weight-700);
+    padding-bottom: 8px;
 } 
 
 .sous_titre{
-    padding: 8px 0 20px 0;
+    padding-bottom: 20px;
 }
 
 .flex_search{
     display: flex;
-    flex-direction: row;
     align-items: center;
     margin-bottom: 32px;
 }
@@ -180,7 +180,7 @@ header{
 /* --FILTRES-- */
 
 
-.filter-base{
+.filter_base{
     display: flex;
     align-items: center;
     padding-left: 7px;
@@ -191,32 +191,32 @@ header{
 .child{
     display: flex;
     flex-wrap: wrap;
-    gap: 30px;
+    gap: 35px;
 }
 
-.filter-base h2 {
+.filter_base h2 {
     font-size: var(--font-size-18);
     font-weight: var(--font-weight-700);
     padding-right: 30px;
 }
   
-.filter-button {
+.filter_button {
     height: 50px;
-    display: inline-flex;
+    display: flex;
     align-items: center;
     border: 2px solid #D9D9D9;
     border-radius: 25px;
     padding: 14px 20px;
 }
   
-.filter-text {
+.filter_text {
     font-size: var(--font-size-17);
     color: var(--color-black);
     font-weight: 700; 
     cursor: pointer;
 }
 
-.filter-button:hover{
+.filter_button:hover{
     background-color: #DEEBFF;
 }
 
@@ -238,6 +238,7 @@ header{
     display: flex;
     align-items: center;
     align-items: baseline;
+    padding-bottom: 39px;   
 }
 
 .information p {
@@ -264,7 +265,7 @@ header{
 .offers {
     display: flex;
     gap: 40px;
-    padding: 39px 0 60px;
+    padding-bottom: 60px;
 }
 
 .fontcolor{
@@ -390,7 +391,7 @@ header{
     display: flex;
     flex-direction: column;
     gap: 33px;
-    padding: 40px;
+    padding: 26px 40px 34px 37px;
     width: 100%;
 }
 
@@ -438,7 +439,7 @@ header{
 .titre_activite{
     font-size: var(--font-size-22);
     font-weight: var(--font-weight-700);
-    padding-bottom: 16px;
+    padding-bottom: 18px;
 }
 
 .display_cards_activite{
@@ -475,7 +476,7 @@ header{
 footer{
     display: flex;
     justify-content: space-between;
-    padding: 45px 70px;
+    padding: 45px 70px 61px;
     background-color:#F2F2F2 ;
 }
 
@@ -483,7 +484,7 @@ footer ul{
     display: flex;
     flex-direction: column;
     gap: 12px;
-    width: 33.3%;
+    width: 33.33%;
 }
 
 footer ul h2{
@@ -502,12 +503,7 @@ footer ul h2{
 
 
     nav{
-        padding-left: 0px;
-        padding-bottom: 8px;
-    }
-    
-    .nav_link{
-        padding: 46px 30px;
+        margin-bottom: 8px;
     }
 
 
@@ -518,21 +514,29 @@ footer ul h2{
         padding-left: 0px;
     }
 
+    .header_title{
+        padding-bottom: 13px;
+    }
+
     .sous_titre{
-        padding: 13px 0px 20px 0px ;
+        padding-bottom: 20px;
     }
 
-    .flex_search{
-        margin-left: 2px;   
+    .filter_base{
+        padding-left: 0;
     }
 
-    .filter-button {
-        margin-right: 22px;
+    .filter_base h2{
+        padding-right: 25px;
+    }
+
+    .child{
+        gap: 25px;
     }
 
     .child li:nth-child(4){
         margin-right: 0px;
-    }
+    } 
 
 
 /* --OFFERS-- */
@@ -540,26 +544,40 @@ footer ul h2{
 
     .offers {
         flex-direction: column;
-        gap: 26px;
-        padding: 40px 0 70px;
+        gap: 53px;
+        padding-bottom: 70px;
     }
+
+
+/* --OFFERS-- marseille */
+
 
     .card_marseille {
         width: auto;
     }
 
     .display_cards{
-        padding: 20px 0 40px 0; 
+        padding: 23px 0 40px 0; 
     }
 
+
+/* --OFFERS-- populaire */
+
+
     .card_populaire{
-        width: auto;    
+        width: 100%;    
     }
 
     .display_cards_populaire{
         flex-direction: row;
         width: 100%;
-    }   
+        padding: 26px 40px 48px;
+    } 
+    
+    .titre_populaire{
+        padding: 34px 40px 0;
+    }
+
     .cards_size_populaire{
         width: 33.33%;
     }
@@ -577,7 +595,11 @@ footer ul h2{
     }
 
     .display_cards_activite{
-        gap: 30px   
+        gap: 50px   
+    }
+
+    .img_activite img{
+        aspect-ratio: 10/12;
     }
 
 }
@@ -638,8 +660,12 @@ footer ul h2{
         padding: 0 20px;
     }
 
+    .header_title{
+        padding-bottom: 13px;
+    }
+
     .sous_titre{
-        padding: 13px 0 36px 0;
+        padding-bottom: 36px;
     }
 
     .btn_rechercher{
@@ -669,14 +695,14 @@ footer ul h2{
 /* --FILTRES-- */
 
 
-    .filter-button { 
+    .filter_button { 
         width: 100%;  
         padding: 14px 20px;
         padding-left: 13px;
         margin-right: 0px;
     }
 
-    .filter-base{
+    .filter_base{
         display: flex; 
         flex-direction: column;
         padding-bottom: 43px; 
@@ -684,12 +710,12 @@ footer ul h2{
         width: 100%;
     } 
 
-    .filter-base h2 {
+    .filter_base h2 {
         padding-right: 0px;
         padding-bottom: 15px;
     }
 
-    .filter-text {
+    .filter_text {
         font-size: 11px;
     }
 
@@ -712,7 +738,7 @@ footer ul h2{
     .offers {
         flex-direction: column-reverse;
         gap: 26px;
-        padding: 35px 0 105px;
+        padding-bottom: 105px;
     }
 
     .fontcolor{
@@ -810,7 +836,7 @@ footer ul h2{
 
     footer{
         flex-direction: column;   
-        padding: 45px 30px;
+        padding: 45px 30px 61px;
     } 
 
    .ul_padd_bott{
