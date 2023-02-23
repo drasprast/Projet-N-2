@@ -31,7 +31,12 @@ html{
     --color-blue : #0065FC;
     --color-black :#000000;
     --color-grey : #F2F2F2;
+    --font-size-14 : 14px;
     --font-size-16 : 16px;
+    --font-size-17 : 17px;
+    --font-size-18 : 18px;
+    --font-size-22 : 22px;
+    --font-weight-700 : 700;
 }
 
 body{
@@ -92,8 +97,8 @@ header{
 }
 
 .header_title{
-    font-size: 22px;
-    font-weight: 700;
+    font-size: var(--font-size-22);
+    font-weight: var(--font-weight-700);
 } 
 
 .sous_titre{
@@ -127,9 +132,9 @@ header{
 .search_input{
     height: 49px;
     width: 230px;
-    font-size: 18px;
+    font-size: var(--font-size-18);
     height: 21px;
-    font-weight: 700;
+    font-weight: var(--font-weight-700);
     padding-left: 17px; 
 }
 
@@ -145,7 +150,7 @@ header{
 .btn_rechercher{
     width: 132px;
     height: 49px;
-    font-size: 18px;
+    font-size: var(--font-size-18);
     font-weight: 700;
     color: white;
     background-color: var(--color-blue);
@@ -161,12 +166,12 @@ header{
     border-radius: 0px 15px 15px 0px;
     cursor: pointer;
     font-family: FontAwesome;
-    font-size: 18px;
+    font-size: var(--font-size-18);
     display: none;
 }
 
 .fa-location-dot{
-    font-size: 18px;   
+    font-size: var(--font-size-18);   
 }
 
 
@@ -188,8 +193,8 @@ header{
 }
 
 .filter-base h2 {
-    font-size: 18px;
-    font-weight: 700;
+    font-size: var(--font-size-18);
+    font-weight: var(--font-weight-700);
     padding-right: 30px;
 }
   
@@ -203,7 +208,7 @@ header{
 }
   
 .filter-text {
-    font-size: 17px;
+    font-size: var(--font-size-17);
     color: var(--color-black);
     font-weight: 700; 
     cursor: pointer;
@@ -278,8 +283,8 @@ header{
 }
 
 .titre_marseille {
-    font-size: 22px;
-    font-weight: 700;
+    font-size: var(--font-size-22);
+    font-weight: var(--font-weight-700);
 }
 
 .display_cards {
@@ -319,12 +324,12 @@ header{
 
 .cards_text_sizing h3 {
     font-size: var(--font-size-16);
-    font-weight: 700;
+    font-weight: var(--font-weight-700);
     padding-bottom: 6px;
 }
 
 .cards_text_sizing p {
-    font-size: 14px;  
+    font-size: var(--font-size-14);  
     padding-bottom: 6px;     
 }
 
@@ -347,9 +352,9 @@ header{
 
 .afficher_plus {
     cursor: pointer;
-    font-size: 18px;
-    font-weight: 700;
-    display: flex;  
+    font-size: var(--font-size-18);
+    font-weight: var(--font-weight-700); 
+    margin-right: auto;
 }
 
 
@@ -370,13 +375,13 @@ header{
 }
 
 .titre_populaire h2{
-    font-size: 22px;
-    font-weight: 700;
+    font-size: var(--font-size-22);
+    font-weight: var(--font-weight-700);
 }
 
 .titre_populaire i{
     color: var(--color-blue);
-    font-size: 18px;
+    font-size: var(--font-size-18);
 }
 
 .display_cards_populaire{
@@ -410,12 +415,12 @@ header{
 
 .cards_text_sizing_populaire h3{
     font-size:var(--font-size-16);
-    font-weight: 700;
+    font-weight: var(--font-weight-700);
     padding-bottom: 6px;
 }
 
 .cards_text_sizing_populaire p{
-    font-size: 14px;
+    font-size: var(--font-size-14);
     padding-bottom: 6px;
 }
 
@@ -429,8 +434,8 @@ header{
 }
 
 .titre_activite{
-    font-size: 22px;
-    font-weight: 700;
+    font-size: var(--font-size-22);
+    font-weight: var(--font-weight-700);
     padding-bottom: 16px;
 }
 
@@ -457,7 +462,7 @@ header{
     align-items: center;
     min-height: 50px;
     font-size: var(--font-size-16);
-    font-weight: 700;
+    font-weight: var(--font-weight-700);
     padding: 2px 20px 6px 20px;
 }
 
@@ -490,7 +495,7 @@ footer ul h2{
         padding: 0 40px;
     }
 
-    
+
 /* --NAV-- */
 
 
@@ -550,9 +555,12 @@ footer ul h2{
     }
 
     .display_cards_populaire{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        flex-direction: row;
+        width: 100%;
     }   
+    .cards_size_populaire{
+        width: 33.33%;
+    }
 
     .cards_text_sizing_populaire{
         padding: 7px 11px 7px 10px;
@@ -684,7 +692,6 @@ footer ul h2{
     }
 
     .fa-heart, .fa-dog, .fa-person, .fa-money-bill-wave {
-        font-size: 19px;
         padding-right: 5px;
     }
 
@@ -694,14 +701,6 @@ footer ul h2{
         row-gap: 17px;
         column-gap: 14px;
         width: 100%;   
-    }
-
-
-/* --INFORMATION-- */
-
-
-    .fa-info{
-    margin-left: 0;   
     }
 
 
@@ -756,8 +755,7 @@ footer ul h2{
 
 
     .display_cards_populaire{
-        display: grid;
-        grid-template-columns: 1fr ;
+        flex-direction: column;
         gap: 12px;
         padding: 0 ;      
     }
