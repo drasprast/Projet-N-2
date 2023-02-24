@@ -452,7 +452,7 @@ header{
     border-radius: 20px;
 }
 
-.img_activite img{
+.img_activite{
     object-fit: cover;
     width: 100%;
     aspect-ratio: 10/13;
