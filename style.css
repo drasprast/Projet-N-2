@@ -82,7 +82,6 @@ nav{
 .hover_nav{
     color: black;
     display: inline-block;
-    position: relative;
 }
 
 .hover_nav:hover{
@@ -153,7 +152,7 @@ header{
     width: 132px;
     height: 49px;
     font-size: var(--font-size-18);
-    font-weight: 700;
+    font-weight: var(--font-weight-700);
     color: white;
     background-color: var(--color-blue);
     border-radius: 0px 15px 15px 0px;
@@ -212,7 +211,7 @@ header{
 .filter_text {
     font-size: var(--font-size-17);
     color: var(--color-black);
-    font-weight: 700; 
+    font-weight: var(--font-weight-700); 
     cursor: pointer;
 }
 
