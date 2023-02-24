@@ -721,7 +721,7 @@ footer ul h2{
         padding-right: 5px;
     }
 
-    .child{
+    .filter_child{
         display: grid;
         grid-template-columns: 1fr 1fr;
         row-gap: 17px;
@@ -824,7 +824,7 @@ footer ul h2{
         width: 100%;        
     }
 
-    .img_activite img{    
+    .img_activite{    
         max-height: 140px;
     }
 
