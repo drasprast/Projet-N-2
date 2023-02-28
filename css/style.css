@@ -843,6 +843,9 @@ footer ul h2{
         flex-direction: column;   
         padding: 45px 30px 61px;
     } 
+    footer ul{
+        width: 100%;
+    }
 
    .ul_padd_bott{
         padding-bottom: 40px;
